@@ -1,16 +1,30 @@
 <meta charset="utf-8">
-<title>{{ include.title }} - {{ site.name }}</title>
+<title>{{ include.title | default: "{{ site.name }}" }} - {{ site.name }}</title>
+<!--Begin static tags-->
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="msapplication-TileColor" content="#303f9f">
+<meta name="theme-color" content="#303f9f">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<!--End static tags-->
+{% if site.name %}
+  <meta property="og:title" content="{{ site.name }}">
+  <meta property="og:site_name" content="{{ site.name }}">
+  <meta name="twitter:title" content="{{ site.name }}">
+{% endif %}
 {% if site.index_on_google %}
   <meta name="robots" content="index,follow">
   <meta name="googlebot" content="index,follow">
 {% endif %}
 {% if site.description %}
   <meta name="description" content="{{ site.description }}">
+  <meta property="og:description" content="{{ site.description }}">
+  <meta name="twitter:description" content="{{ site.description }}">
 {% endif %}
 {% if site.url %}
   <link rel="canonical" href="{{ site.url }}">
+  <meta property="og:url" content="{{ site.url }}">
 {% if site.keywords %}
   <meta name="keywords" content="{{ site.keywords }}">
 {% endif %}
@@ -18,6 +32,7 @@
   <link rel="apple-touch-icon" sizes="180x180" href="{{ site.apple-touch-icon }}">
 {% endif %}
 {% if site.favicons and site.faviconbase %}
+  <!--apply favicons-->
   {% assign liststripped = site.favicons | compact %}
   {% for resolution in liststripped %}
     <link rel="icon" type="image/png" sizes="{{ resolution }}x{{ resolution }}" href="{{ site.faviconbase }}{{ resoultion }}x{{ resolution }}.png">
@@ -29,26 +44,13 @@
 {% if site.safari-pinned-tab %}
   <link rel="mask-icon" href="{{ site.safari-pinned-tab }}" color="#5bbad5">
 {% endif %}
-<meta name="msapplication-TileColor" content="#303f9f">
-<meta name="theme-color" content="#303f9f">
 {% if site.browserconfigxml %}
   <meta name="msapplication-config" content="{{ site.browserconfigxml }}">
 {% endif %}
 {% if site.microsoft.tileimage %}
   <meta name="msapplication-TileImage" content="{{ site.microsoft.tileimage }}">
 {% endif %}
-{% if site.social_media_seo %}
-  <meta property="og:url" content="{{ site.url }}">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="{{ site.name }}">
-  <meta property="og:description" content="{{ site.description }}">
-  <meta property="og:site_name" content="{{ site.name }}">
-  <meta property="og:locale" content="en_US">
-  <meta property="og:image" content="{{ site.opengraph.image }}">
-  <meta property="og:image:secure_url" content="{{ site.opengraph.image-secure }}">
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="{{ site.name }}">
-  <meta name="twitter:site" content="@{{ site.twitter_username }}">
-  <meta name="twitter:description" content="{{ site.description }}">
-  <meta name="twitter:image" content="{{ site.twitter.image }}">
-{% endif %}
+<meta property="og:image" content="{{ site.opengraph.image }}">
+<meta property="og:image:secure_url" content="{{ site.opengraph.image-secure }}">
+<meta name="twitter:site" content="@{{ site.twitter_username }}">
+<meta name="twitter:image" content="{{ site.twitter.image }}">
