@@ -8,7 +8,6 @@ gem_build_task:
     NOKOGIRI_USE_SYSTEM_LIBRARIES: false
     matrix:
       - RUBY_VERSION: latest
-      - RUBY_VERSION: 2.5
       - RUBY_VERSION: 2.6
   bootstrap_script: gem install bundler
   bundler_cache:
