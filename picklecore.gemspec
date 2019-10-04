@@ -6,9 +6,9 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Reece Dunham", "Param Thakkar"]
   spec.email         = ["me@rdil.rocks"]
 
-  spec.summary       = "RDIL.rocks Theme"
+  spec.summary       = "A Jekyll theme built to make personal sites and small websites, but can easily scale!"
   spec.homepage      = "https://github.com/RDIL/PickleCore"
-  spec.license       = "All Rights Reserved"
+  spec.license       = "MPL-2.0"
 
   spec.metadata["plugin_type"] = "theme"
 
@@ -20,6 +20,6 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency "jekyll-default-layout", "= 0.1.4"
   spec.add_runtime_dependency "jekyll-relative-links", "= 0.6.0"
 
-  spec.add_development_dependency "bundler"
-  spec.add_development_dependency "rake"
+  spec.add_development_dependency "bundler", ">=1.0.1"
+  spec.add_development_dependency "rake", ">12.0.0"
 end
