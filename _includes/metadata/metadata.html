@@ -32,7 +32,7 @@
 <meta name="msapplication-TileColor" content="#303f9f">
 <meta name="theme-color" content="#303f9f">
 {% if site.browserconfigxml %}
-  <meta name="msapplication-config" content="https://rdil.rocks/browserconfig.xml">
+  <meta name="msapplication-config" content="{{ site.browserconfigxml }}">
 {% endif %}
 {% if site.microsoft.tileimage %}
   <meta name="msapplication-TileImage" content="{{ site.microsoft.tileimage }}">
