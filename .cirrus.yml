@@ -10,7 +10,6 @@ gem_build_task:
       - RUBY_VERSION: latest
       - RUBY_VERSION: 2.5
       - RUBY_VERSION: 2.6
-      - RUBY_VERSION: 2.7
   bootstrap_script: gem install bundler
   bundler_cache:
     folder: /usr/local/bundle
