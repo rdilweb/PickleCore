@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% include page-template/metadata.html pagename="You fell off my site!" %}
+    <link rel="stylesheet" href="/assets/css/error.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400" rel="stylesheet">
+  </head>
+  <body onload="document.body.style.backgroundColor = '#303f9f'">
+    <div class="error">
+      <h1 class="animated fadeInRightBig">{{ site.errormessage | default: "Uh oh... You fell off my site!" }}</h1>
+      <p class="animated delay fadeInLeftBig">
+        Error {{ page.code }} ({{ page.desc }})
+        {% if site.email %}
+          - If you think this is a mistake on my part, please <a href="mailto:{{ site.email }}">send me an email.</a>
+        {% endif %}
+      </p>
+    </div>
+  </body>
+</html>
