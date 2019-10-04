@@ -19,7 +19,6 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency "jekyll", ">= 3.5", "< 5.0"
   spec.add_runtime_dependency "jekyll-default-layout", "= 0.1.4"
   spec.add_runtime_dependency "jekyll-relative-links", "= 0.6.0"
-  spec.add_runtime_dependency "jekyll-sass-converter", "1.5.2"
 
   spec.add_development_dependency "bundler"
   spec.add_development_dependency "rake"
