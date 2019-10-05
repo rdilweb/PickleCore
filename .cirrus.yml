@@ -1,14 +1,13 @@
 gem_build_task:
   container:
-    image: ruby:$RUBY_VERSION
+    matrix:
+      - image: ruby:2.6
+      - image: ruby:latest
   auto_cancellation: true
   use_compute_credits: $CIRRUS_PR == ''
   env:
     JEKYLL_ENV: production
     NOKOGIRI_USE_SYSTEM_LIBRARIES: false
-    matrix:
-      - RUBY_VERSION: latest
-      - RUBY_VERSION: 2.6
   bootstrap_script: gem install bundler
   bundler_cache:
     folder: /usr/local/bundle
