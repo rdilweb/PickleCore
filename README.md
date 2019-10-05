@@ -42,6 +42,7 @@ PickleCore is (probably) the most customizable theme out in the Jekyllverse. Her
 * `webmanifest` - link to a `manifest.json` or a file with the `.webmanifest` extension (used by Google for web apps, link must be relative to the root page of the site)
 * `description` - description of the site (for metadata)
 * `url` - the URL of your site when hosted in production
+* `apple-touch-icon` - the URL of the Apple touch icon for the site if you have one (see [this article](https://www.computerhope.com/jargon/a/appletou.htm) for more info)
 
 ## Applying Theme Components
 
@@ -49,7 +50,7 @@ The PickleCore theme allows you to apply some nice looking components that match
 
 ### Cards
 
-![A card](https://raw.githubusercontent.com/RDIL/PickleCore/images/card-example.png)
+[![A card](https://raw.githubusercontent.com/RDIL/debugging-playground/master/card-example.png)](https://github.com/RDIL/PickleCore)
 
 A card (shown above) can be applied by adding the following to any page with [Front Matter](https://jekyllrb.com/docs/front-matter/) on it:
 
