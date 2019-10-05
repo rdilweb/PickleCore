@@ -16,3 +16,4 @@ gem_build_task:
   build_script: bundler exec rake --trace --verbose
   gem_artifacts:
     path: ./*.gem
+  only_if: $CIRRUS_BRANCH != "images"
