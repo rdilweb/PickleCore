@@ -21,5 +21,5 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency "jekyll-relative-links", "= 0.6.0"
 
   spec.add_development_dependency "bundler", "= 2.0.2"
-  spec.add_development_dependency "rake", "= 12.0.0"
+  spec.add_development_dependency "rake", "= 13.0.0"
 end
