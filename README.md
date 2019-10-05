@@ -38,6 +38,25 @@ Netlify is perfect for deploying PickleCore. The setup is quite easy - just set 
 
 PickleCore is (probably) the most customizable theme out in the Jekyllverse. Here is a list of keys you can put in your `_config.yml` and what they do:
 
+* `name` - the name of the site (main title)
 * `webmanifest` - link to a `manifest.json` or a file with the `.webmanifest` extension (used by Google for web apps, link must be relative to the root page of the site)
 * `description` - description of the site (for metadata)
 * `url` - the URL of your site when hosted in production
+
+## Applying Theme Components
+
+The PickleCore theme allows you to apply some nice looking components that match with the theme via `includes`.
+
+### Cards
+
+![A card](https://raw.githubusercontent.com/RDIL/PickleCore/images/card-example.png)
+
+A card (shown above) can be applied by adding the following to any page with [Front Matter](https://jekyllrb.com/docs/front-matter/) on it:
+
+```html
+<!-- Note: you can put as many cards as you want in each card container, but all cards NEED to be in a container -->
+<div class="cards">
+  <!-- In this container, render a card -->
+  {% include components/card.html cardtitle="My Card" cardbody="The text of the card!" %}
+</div>
+```
