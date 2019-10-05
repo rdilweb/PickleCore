@@ -5,11 +5,17 @@ Gem::Specification.new do |spec|
   spec.version       = "0.1.0"
   spec.authors       = ["Reece Dunham", "Param Thakkar"]
   spec.email         = ["me@rdil.rocks"]
-
   spec.summary       = "A Jekyll theme built to make personal sites and small websites, but can easily scale!"
   spec.homepage      = "https://github.com/RDIL/PickleCore"
   spec.license       = "MPL-2.0"
 
+  spec.metadata = {
+    "bug_tracker_uri"   => "https://github.com/RDIL/PickleCore/issues",
+    "documentation_uri" => "https://github.com/RDIL/PickleCore/blob/master/README.md",
+    "homepage_uri"      => "https://github.com/RDIL/PickleCore/",
+    "source_code_uri"   => "https://github.com/RDIL/PickleCore/",
+    "wiki_uri"          => "https://github.com/RDIL/PickleCore/blob/master/README.md"
+  }
   spec.metadata["plugin_type"] = "theme"
 
   spec.files = `git ls-files -z`.split("\x0").select do |f|
