@@ -132,7 +132,7 @@ td {
 #nav-btn {
   width: 60px;
   height: 35px;
-  position: absolute;
+  position: fixed;
   right: 25px;
   top: 25px;
   margin: 0;
