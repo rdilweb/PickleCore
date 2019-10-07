@@ -1,35 +1,35 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #303f9f;
+  background-color: #303f9f
 }
 
 .content {
   margin: 75px 100px;
   font-family: "Open Sans", sans-serif;
-  color: white;
+  color: white
 }
 
 .title {
-  height: 45vh;
+  height: 45vh
 }
 
 h1 {
-  font-size: 3em;
+  font-size: 3em
 }
 
 h2 {
-  margin-top: 36px;
+  margin-top: 36px
 }
 
 tr {
-  white-space: nowrap;
+  white-space: nowrap
 }
 
 .cards {
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: wrap
 }
 
 .card {
@@ -41,23 +41,23 @@ tr {
   position: relative;
   width: 300px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1)
 }
 
 .card h1 {
   font-size: 2em;
   margin-top: 20px;
   margin-left: 20px;
-  margin-bottom: 10.5px;
+  margin-bottom: 10.5px
 }
 
 .card p {
   margin: 20px;
-  line-height: 1.2;
+  line-height: 1.2
 }
 
 .card:hover {
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22)
 }
 
 .nav {
@@ -70,7 +70,7 @@ tr {
   background-color: white;
   overflow-x: hidden;
   transition: 0.5s;
-  padding-top: 60px;
+  padding-top: 60px
 }
 
 .nav a {
@@ -79,11 +79,11 @@ tr {
   color: #303f9f;
   font-size: 25px;
   display: block;
-  transition: 0.3s;
+  transition: 0.3s
 }
 
 table {
-  padding: 0 26px;
+  padding: 0 26px
 }
 
 tr {
@@ -91,11 +91,11 @@ tr {
   text-decoration: none;
   color: #303f9f;
   font-size: 25px;
-  transition: 0.3s;
+  transition: 0.3s
 }
 
 tr:hover {
-  cursor: pointer;
+  cursor: pointer
 }
 
 td {
@@ -104,28 +104,28 @@ td {
 
 @media screen and (max-height: 450px) {
   .nav {
-    padding-top: 15px;
+    padding-top: 15px
   }
   .nav a {
-    font-size: 18px;
+    font-size: 18px
   }
 }
 
 @media only screen and (max-width: 500px) {
   .cards {
-    display: inline;
+    display: inline
   }
 
   .card {
-    height: 350px;
+    height: 350px
   }
 
   .card h1 {
-    padding-top: 14px;
+    padding-top: 14px
   }
 
   .content {
-    margin: 75px 12.5px;
+    margin: 75px 12.5px
   }
 }
 
@@ -164,7 +164,7 @@ td {
   -webkit-transition: 0.25s ease-in-out;
   -moz-transition: 0.25s ease-in-out;
   -o-transition: 0.25s ease-in-out;
-  transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out
 }
 
 #nav-btn span:nth-child(1) {
@@ -172,7 +172,7 @@ td {
   -webkit-transform-origin: left center;
   -moz-transform-origin: left center;
   -o-transform-origin: left center;
-  transform-origin: left center;
+  transform-origin: left center
 }
 
 #nav-btn span:nth-child(2) {
@@ -180,7 +180,7 @@ td {
   -webkit-transform-origin: left center;
   -moz-transform-origin: left center;
   -o-transform-origin: left center;
-  transform-origin: left center;
+  transform-origin: left center
 }
 
 #nav-btn span:nth-child(3) {
@@ -188,11 +188,11 @@ td {
   -webkit-transform-origin: left center;
   -moz-transform-origin: left center;
   -o-transform-origin: left center;
-  transform-origin: left center;
+  transform-origin: left center
 }
 
 #nav-btn.open span {
-  background-color: #303f9f;
+  background-color: #303f9f
 }
 
 #nav-btn.open span:nth-child(1) {
@@ -201,12 +201,12 @@ td {
   -o-transform: rotate(45deg);
   transform: rotate(45deg);
   top: -3px;
-  left: 8px;
+  left: 8px
 }
 
 #nav-btn.open span:nth-child(2) {
   width: 0%;
-  opacity: 0;
+  opacity: 0
 }
 
 #nav-btn.open span:nth-child(3) {
@@ -215,5 +215,50 @@ td {
   -o-transform: rotate(-45deg);
   transform: rotate(-45deg);
   top: 39px;
-  left: 8px;
+  left: 8px
+}
+
+button {
+  display: inline-block;
+  vertical-align: middle;
+  background: #303f9f;
+  color: #fff;
+  border: none;
+  position: relative;
+  height: 60px;
+  font-size: 1.6em;
+  padding: 0 2em;
+  cursor: pointer;
+  transition: 800ms ease all;
+  outline: none
+}
+
+button:hover {
+  background: #fff;
+  color: #303f9f
+}
+
+button:before,
+button:after{
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 2px;
+  width: 0;
+  background: #303f9f;
+  transition: 400ms ease all
+}
+
+button:after {
+  right: inherit;
+  top: inherit;
+  left: 0;
+  bottom: 0
+}
+
+button:hover:before,
+button:hover:after {
+  width:100%;
+  transition:800ms ease all
 }
