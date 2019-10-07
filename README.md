@@ -43,6 +43,24 @@ PickleCore is (probably) the most customizable theme out in the Jekyllverse. Her
 * `description` - description of the site (for metadata)
 * `url` - the URL of your site when hosted in production
 * `apple-touch-icon` - the URL of the Apple touch icon for the site if you have one (see [this article](https://www.computerhope.com/jargon/a/appletou.htm) for more info)
+* `index_on_google` - `true` or `false` depending if you want your site in Google search results
+* `keywords` - an inline list of comma (no spaces) seperated keywords (for SEO) (e.g. `keywords: "hello,world,this,is,my,site"`)
+* Favicons - this requires multiple steps so read all sub-bullets
+  * `favicon_base` - route of where the favicons are served, e.g. `https://my.site/favicons/favicon-` (extension must be `PNG`)
+  * `favicons` - array of resolutions, e.g.:
+  ```yaml
+  favicons:
+    - "32"  # 32x32
+    - "64"  # 64x64
+    # and so on
+  ```
+* `browserconfigxml` - link to a `browserconfig.xml` for Microsoft-based browsers
+* `microsoft` - this is a dictionary that currently only has one option:
+  * `tileimage` - the link to the tile image
+* The same thing can be applied to `twitter` with the subkey `image`, and `opengraph` with the subkey `image`
+* `twitter_username` - your Twitter username as a string (no `@`!)
+
+Most of the favicons and images listed here can be made over at https://realfavicongenerator.net
 
 ## Applying Theme Components
 
