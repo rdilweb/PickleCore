@@ -1,0 +1,8 @@
+<button
+    title="{{ include.title }}"
+    {% if include.onclickjs %}
+        onclick="{{ include.onclickjs }}"
+    {% endif %}
+>
+{{ include.title }}
+</button>
