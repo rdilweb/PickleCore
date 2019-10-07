@@ -70,7 +70,7 @@ The PickleCore theme allows you to apply some nice looking components that match
 
 [![A card](https://raw.githubusercontent.com/RDIL/debugging-playground/master/card-example.png)](https://github.com/RDIL/PickleCore)
 
-A card (shown above) can be applied by adding the following to any page with [Front Matter](https://jekyllrb.com/docs/front-matter/) on it:
+A card (shown above) can be applied by adding the following to any page **with [Front Matter](https://jekyllrb.com/docs/front-matter/) on it**:
 
 ```html
 <!-- Note: you can put as many cards as you want in each card container, but all cards NEED to be in a container -->
@@ -79,3 +79,36 @@ A card (shown above) can be applied by adding the following to any page with [Fr
   {% include components/card.html cardtitle="My Card" cardbody="The text of the card!" %}
 </div>
 ```
+
+### Sidebar
+
+The easiest way to apply the sidebar to your website is to use the `default-with-sidebar` layout via Jekyll:
+
+```html
+---
+layout: default-with-sidebar
+---
+```
+
+The second easiest way is to add it via the include:
+
+```html
+---
+layout: default
+---
+
+<!--
+    Anchor the sidebar opener to this location on the page
+    Note: trying to move it via CSS may prove difficult!
+-->
+
+{%- include components/binds/sidebar-anchor.html -%}
+
+<!-- Other content -->
+```
+
+But you should ***most certainly not*** simply use the `sidebar.html` component without the anchor - this will most likely break everything. Use one of the methods above.
+
+> *Help! My sidebar is blank when I open it - what do I do?*
+> Certain site config fields will populate the sidebar, so see the customization section above.
+
