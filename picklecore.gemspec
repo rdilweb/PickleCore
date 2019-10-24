@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "picklecore"
-  spec.version       = "0.3.0"
+  spec.version       = "0.4.0"
   spec.authors       = ["Reece Dunham", "Param Thakkar"]
   spec.email         = ["me@rdil.rocks"]
   spec.summary       = "A Jekyll theme built to make personal sites and small websites, but can easily scale!"
