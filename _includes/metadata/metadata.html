@@ -1,5 +1,5 @@
 <meta charset="utf-8">
-<title>{{ include.title | default: "{{ site.name }}" }} - {{ site.name }}</title>
+<title>{{ include.title | default: site.name }} - {{ site.name }}</title>
 <!--Begin static tags-->
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -51,7 +51,13 @@
 {% if site.microsoft.tileimage %}
   <meta name="msapplication-TileImage" content="{{ site.microsoft.tileimage }}">
 {% endif %}
-<meta property="og:image" content="{{ site.opengraph.image }}">
-<meta property="og:image:secure_url" content="{{ site.opengraph.image-secure }}">
-<meta name="twitter:site" content="@{{ site.twitter_username }}">
-<meta name="twitter:image" content="{{ site.twitter.image }}">
+{% if site.opengraph.image %}
+  <meta property="og:image" content="{{ site.opengraph.image-secure }}">
+  <meta property="og:image:secure_url" content="{{ site.opengraph.image-secure }}">
+{% endif %}
+{% if site.twitter_username %}
+  <meta name="twitter:site" content="@{{ site.twitter_username }}">
+{% endif %}
+{% if site.twitter.image %}
+  <meta name="twitter:image" content="{{ site.twitter.image }}">
+{% endif %}
