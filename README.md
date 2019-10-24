@@ -59,6 +59,7 @@ PickleCore is (probably) the most customizable theme out in the Jekyllverse. Her
   * `tileimage` - the link to the tile image
 * The same thing can be applied to `twitter` with the subkey `image`, and `opengraph` with the subkey `image`
 * `twitter_username` - your Twitter username as a string (no `@`!)
+* `devto` - your [DEV.to](https://dev.to/) username (if you want it on the sidebar)
 
 Most of the favicons and images listed here can be made over at https://realfavicongenerator.net
 
