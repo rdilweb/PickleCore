@@ -6,11 +6,11 @@
   </head>
   <body onload="document.body.style.backgroundColor = '#303f9f'">
     <div class="error">
-      <h1 class="animated fadeInRightBig">{{ site.errormessage | default: "Uh oh... You fell off my site!" }}</h1>
+      <h1 class="animated fadeInRightBig">{{ site.errormessage | default: "Uh oh... You fell off our site!" }}</h1>
       <p class="animated delay fadeInLeftBig">
         Error {{ page.code }} ({{ page.desc }})
         {% if site.email %}
-          - If you think this is a mistake on my part, please <a href="mailto:{{ site.email }}">send me an email.</a>
+          - If you think this is a mistake on our part, please <a href="mailto:{{ site.email }}">send us an email</a>.
         {% endif %}
       </p>
     </div>

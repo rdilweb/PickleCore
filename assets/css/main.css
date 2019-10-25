@@ -1,20 +1,9 @@
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: url('/assets/fonts/open-sans-v17-latin-regular.eot');
-  src: local('Open Sans Regular'), local('OpenSans-Regular'),
-       url('/assets/fonts/open-sans-v17-latin-regular.eot?#iefix') format('embedded-opentype'),
-       url('/assets/fonts/open-sans-v17-latin-regular.woff2') format('woff2'),
-       url('/assets/fonts/open-sans-v17-latin-regular.woff') format('woff'),
-       url('/assets/fonts/open-sans-v17-latin-regular.ttf') format('truetype'),
-       url('/assets/fonts/open-sans-v17-latin-regular.svg#OpenSans') format('svg');
-}
+{% include styling/font.css %}
 
 body {
   margin: 0;
   padding: 0;
-  background-color: #303f9f
+  background-color: {%- include styling/theme-color.css -%}
 }
 
 .content {
@@ -47,7 +36,7 @@ tr {
 
 .card {
   background: #fff;
-  color: #303f9f;
+  color: {%- include styling/theme-color.css -%};
   border-radius: 2px;
   height: 400px;
   margin: 1rem;
@@ -89,7 +78,7 @@ tr {
 .nav a {
   padding: 8px;
   text-decoration: none;
-  color: #303f9f;
+  color: {%- include styling/theme-color.css -%};
   font-size: 25px;
   display: block;
   transition: 0.3s
@@ -102,7 +91,7 @@ table {
 tr {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
-  color: #303f9f;
+  color: {%- include styling/theme-color.css -%};
   font-size: 25px;
   transition: 0.3s
 }
@@ -205,7 +194,7 @@ td {
 }
 
 #nav-btn.open span {
-  background-color: #303f9f
+  background-color: {%- include styling/theme-color.css -%}
 }
 
 #nav-btn.open span:nth-child(1) {
@@ -234,7 +223,7 @@ td {
 button {
   display: inline-block;
   vertical-align: middle;
-  background: #303f9f;
+  background: {%- include styling/theme-color.css -%};
   color: #fff;
   border: none;
   position: relative;
@@ -248,7 +237,7 @@ button {
 
 button:hover {
   background: #fff;
-  color: #303f9f
+  color: {%- include styling/theme-color.css -%}
 }
 
 button:before,
@@ -259,7 +248,7 @@ button:after {
   right: 0;
   height: 2px;
   width: 0;
-  background: #303f9f;
+  background: {%- include styling/theme-color.css -%};
   transition: 400ms ease all
 }
 
