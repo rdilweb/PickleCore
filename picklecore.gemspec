@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
 Gem::Specification.new do |spec|
-  spec.name          = "picklecore"
-  spec.version       = "0.7.0"
+  spec.name          = "picklecore".freeze
+  spec.version       = "0.7.1"
   spec.authors       = ["Reece Dunham", "Param Thakkar"]
   spec.email         = ["me@rdil.rocks"]
   spec.summary       = "A Jekyll theme built to make personal sites and small websites, but can easily scale!"
