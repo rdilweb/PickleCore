@@ -1,12 +1,3 @@
-function openNav() {
-  document.getElementById("nav-icon4").classList.toggle("open");
-  document.getElementById("nav").style.width = "265px";
-}
-
-function closeNav() {
-  document.getElementById("nav").style.width = "0";
-}
-
 navOpen = false;
 
 function toggleNav() {
