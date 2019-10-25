@@ -1,3 +1,16 @@
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/assets/fonts/open-sans-v17-latin-regular.eot');
+  src: local('Open Sans Regular'), local('OpenSans-Regular'),
+       url('/assets/fonts/open-sans-v17-latin-regular.eot?#iefix') format('embedded-opentype'),
+       url('/assets/fonts/open-sans-v17-latin-regular.woff2') format('woff2'),
+       url('/assets/fonts/open-sans-v17-latin-regular.woff') format('woff'),
+       url('/assets/fonts/open-sans-v17-latin-regular.ttf') format('truetype'),
+       url('/assets/fonts/open-sans-v17-latin-regular.svg#OpenSans') format('svg');
+}
+
 body {
   margin: 0;
   padding: 0;
