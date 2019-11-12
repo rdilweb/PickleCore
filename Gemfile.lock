@@ -52,7 +52,7 @@ GEM
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
     public_suffix (4.0.1)
-    rake (13.0.0)
+    rake (13.0.1)
     rb-fsevent (0.10.3)
     rb-inotify (0.10.0)
       ffi (~> 1.0)
@@ -70,7 +70,7 @@ PLATFORMS
 DEPENDENCIES
   bundler (= 2.0.2)
   picklecore!
-  rake (= 13.0.0)
+  rake (= 13.0.1)
 
 BUNDLED WITH
    2.0.2
