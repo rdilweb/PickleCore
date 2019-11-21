@@ -7,14 +7,14 @@ Gem::Specification.new do |spec|
   spec.email         = ["me@rdil.rocks"]
   spec.summary       = "A Jekyll theme built to make personal sites and small websites, but can easily scale!"
   spec.homepage      = "https://github.com/RDIL/PickleCore"
-  spec.license       = "MPL-2.0"
+  spec.license       = "MPL-2.0".freeze
 
   spec.metadata = {
-    "bug_tracker_uri"   => "https://github.com/RDIL/PickleCore/issues",
-    "documentation_uri" => "https://github.com/RDIL/PickleCore/blob/master/README.md",
-    "homepage_uri"      => "https://github.com/RDIL/PickleCore/",
-    "source_code_uri"   => "https://github.com/RDIL/PickleCore/",
-    "wiki_uri"          => "https://github.com/RDIL/PickleCore/blob/master/README.md"
+    "bug_tracker_uri"   => "https://github.com/rdilweb/PickleCore/issues",
+    "documentation_uri" => "https://github.com/rdilweb/PickleCore/blob/master/README.md",
+    "homepage_uri"      => "https://github.com/rdilweb/PickleCore/",
+    "source_code_uri"   => "https://github.com/rdilweb/PickleCore/tree/master",
+    "wiki_uri"          => "https://github.com/rdilweb/PickleCore/blob/master/README.md"
   }
   spec.metadata["plugin_type"] = "theme"
 
@@ -27,5 +27,5 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency "jekyll-relative-links", "= 0.6.0"
 
   spec.add_development_dependency "bundler", "= 2.0.2"
-  spec.add_development_dependency "rake", "= 13.0.1"
+  spec.add_development_dependency "rake", "= 13.0.0"
 end

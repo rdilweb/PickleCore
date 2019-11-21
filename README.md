@@ -61,9 +61,14 @@ PickleCore is (probably) the most customizable theme out in the Jekyllverse. Her
 * The same thing can be applied to `twitter` with the subkey `image`, and `opengraph` with the subkey `image`
 * `twitter` - Twitter meta dictionary
   * `username`: your Twitter username as a string (no `@`!)
-* `devto` - your [DEV.to](https://dev.to/) username (if you want it on the sidebar)
+* `devto` - your [DEV](https://dev.to/) username (if you want it on the sidebar)
 
 Most of the favicons and images listed here can be made over at https://realfavicongenerator.net
+
+### Colors
+
+To change the base color, which defaults to `#303f9f`, you can add a file called `_includes/styling/theme-color.css`,
+and put the hex color on the first line. **Do not** add a newline at the end of the file, it will break the CSS!
 
 ## Applying Theme Components
 
@@ -114,4 +119,3 @@ But you should ***most certainly not*** simply use the `sidebar.html` component 
 
 > *Help! My sidebar is blank when I open it - what do I do?*
 > Certain site config fields will populate the sidebar, so see the customization section above.
-
