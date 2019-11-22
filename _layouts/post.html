@@ -1,0 +1,13 @@
+---
+layout: default
+---
+{% include components/binds/sidebar-anchor.html %}
+
+<h2>{{ page.title }}</h2>
+
+{%- assign date_format = site.date_format | default: "%b %-d, %Y" -%}
+By {{ page.author | escape | default: "Administrator" }} - published {{ page.date | date: date_format }}.
+
+<hr />
+
+{{ content }}
