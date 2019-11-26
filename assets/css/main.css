@@ -271,3 +271,15 @@ button:hover:after {
 a {
   color: white
 }
+
+.block-solid {
+  display: block;
+  border: white solid 4px;
+  padding: 7.5px;
+  margin-top: -5px;
+  text-align: center
+}
+
+{% unless site.no_extra_css %}
+    {% include styling/extra.css %}
+{% endunless %}

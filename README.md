@@ -62,6 +62,7 @@ PickleCore is (probably) the most customizable theme out in the Jekyllverse. Her
 * `twitter` - Twitter meta dictionary
   * `username`: your Twitter username as a string (no `@`!)
 * `devto` - your [DEV](https://dev.to/) username (if you want it on the sidebar)
+* `no_extra_css` - prevent custom stylesheets (see below) from being loaded (defaults to `false`)
 
 Most of the favicons and images listed here can be made over at https://realfavicongenerator.net
 
@@ -69,6 +70,12 @@ Most of the favicons and images listed here can be made over at https://realfavi
 
 To change the base color, which defaults to `#303f9f`, you can add a file called `_includes/styling/theme-color.css`,
 and put the hex color on the first line. **Do not** add a newline at the end of the file, it will break the CSS!
+
+### Custom CSS
+
+To apply custom CSS, add a file called `_includes/styling/extra.css` and put styles in that file.
+
+Note: this will not work if you specify the `no_extra_css` key in your config.
 
 ## Applying Theme Components
 
@@ -81,7 +88,10 @@ The PickleCore theme allows you to apply some nice looking components that match
 A card (shown above) can be applied by adding the following to any page **with [Front Matter](https://jekyllrb.com/docs/front-matter/) on it**:
 
 ```html
-<!-- Note: you can put as many cards as you want in each card container, but all cards NEED to be in a container -->
+<!--
+    Note: you can put as many cards as you want in each card container,
+    but all cards NEED to be in a container (with the class 'cards').
+-->
 <div class="cards">
   <!-- In this container, render a card -->
   {% include components/card.html cardtitle="My Card" cardbody="The text of the card!" %}
@@ -92,7 +102,7 @@ A card (shown above) can be applied by adding the following to any page **with [
 
 The easiest way to apply the sidebar to your website is to use the `default-with-sidebar` layout via Jekyll:
 
-```html
+```yaml
 ---
 layout: default-with-sidebar
 ---
@@ -104,13 +114,11 @@ The second easiest way is to add it via the include:
 ---
 layout: default
 ---
-
 <!--
-    Anchor the sidebar opener to this location on the page
+    Anchor the sidebar opener to this location on the page.
     Note: trying to move it via CSS may prove difficult!
 -->
-
-{%- include components/binds/sidebar-anchor.html -%}
+{% include components/binds/sidebar-anchor.html %}
 
 <!-- Other content -->
 ```
@@ -119,3 +127,15 @@ But you should ***most certainly not*** simply use the `sidebar.html` component 
 
 > *Help! My sidebar is blank when I open it - what do I do?*
 > Certain site config fields will populate the sidebar, so see the customization section above.
+
+### Solid Blocks
+
+Sometimes you need to group data, or show something off, and a card just doesn't work. That's alright, you can just use the solid block element.
+
+Example:
+
+```html
+<div class="block-solid">
+    <h2>I am in a block!</h2>
+</div>
+```
