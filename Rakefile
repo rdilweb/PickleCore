@@ -6,7 +6,7 @@ task default: %w[build]
 
 task :build do
   puts "Start phase 'gem build'"
-  sh "bundler exec gem build *.gemspec"
+  sh "bundle exec gem build *.gemspec"
   puts "End phase 'gem build'"
 end
 

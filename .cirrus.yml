@@ -12,7 +12,7 @@ gem_build_task:
     gem install bundler
   bundler_cache:
     folder: /usr/local/bundle
-  install_dependencies_script: bundler
-  build_script: bundler exec rake --trace --verbose
+  install_dependencies_script: bundle install
+  build_script: bundle exec rake --trace --verbose
   gem_artifacts:
     path: ./*.gem
