@@ -41,7 +41,7 @@
 {% if site.browserconfigxml %}
   <meta name="msapplication-config" content="{{ site.browserconfigxml }}">
 {% endif %}
-{% if site.microsoft.tileimage %}
+{% if site.images.tileimage %}
   <meta name="msapplication-TileImage" content="{{ site.microsoft.tileimage }}">
 {% endif %}
 {% if site.opengraph.image %}
@@ -54,3 +54,6 @@
 {% if site.twitter.image %}
   <meta name="twitter:image" content="{{ site.twitter.image }}">
 {% endif %}
+{% unless site.no_extra_head %}
+    {% include metadata/extra.html %}
+{% endunless %}

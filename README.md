@@ -36,7 +36,7 @@ Netlify is perfect for deploying PickleCore. The setup is quite easy - just set 
 
 ## Customization
 
-PickleCore is (probably) the most customizable theme out in the Jekyllverse. Here is a list of keys you can put in your `_config.yml` and what they do:
+PickleCore is (most likely) the most customizable-out-of-the-box theme out in the Jekyllverse. Here is a list of keys you can put in your `_config.yml` and what they do:
 
 * `name` - the name of the site (main title)
 * `webmanifest` - link to a `manifest.json` or a file with the `.webmanifest` extension (used by Google for web apps, link must be relative to the root page of the site)
@@ -45,14 +45,14 @@ PickleCore is (probably) the most customizable theme out in the Jekyllverse. Her
 * `apple-touch-icon` - the URL of the Apple touch icon for the site if you have one (see [this article](https://www.computerhope.com/jargon/a/appletou.htm) for more info)
 * `index_on_google` - `true` or `false` depending if you want your site in Google search results
 * `keywords` - an inline list of comma (no spaces) seperated keywords (for SEO) (e.g. `keywords: "hello,world,this,is,my,site"`)
-* `images` - stuff for favicons
-    * `images.tileimage` - the link to the Microsoft tile image
+* `images.tileimage` - the link to the Microsoft tile image
 * `browserconfigxml` - link to a `browserconfig.xml` for Microsoft-based browsers
 * The same thing can be applied to `twitter` with the subkey `image`, and `opengraph` with the subkey `image`
 * `twitter` - Twitter meta dictionary
   * `username`: your Twitter username as a string (no `@`!)
 * `devto` - your [DEV](https://dev.to/) username (if you want it on the sidebar)
 * `no_extra_css` - prevent custom stylesheets (see below) from being loaded (defaults to `false`)
+* `no_extra_head` - prevent custom metadata (see below) from being loaded (defaults to `false`)
 
 Most of the favicons and images listed here can be made over at https://realfavicongenerator.net
 
@@ -65,7 +65,7 @@ and put the hex color on the first line. **Do not** add a newline at the end of 
 
 To apply custom CSS, add a file called `_includes/styling/extra.css` and put styles in that file.
 
-Note: this will not work if you specify the `no_extra_css` key in your config.
+Note: this will not work if you specify the `no_extra_css` key in your config as `true`.
 
 ## Applying Theme Components
 
@@ -132,3 +132,9 @@ Example:
     <h2>I am in a block!</h2>
 </div>
 ```
+
+### Custom Metadata in `<head>`
+
+To apply custom HTML in `<head>`, add a file called `_includes/metadata/extra.html` and put any HTML in that file.
+
+Note: this will not work if you specify the `no_extra_head` key in your config as `true`.
