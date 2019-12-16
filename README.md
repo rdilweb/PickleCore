@@ -10,13 +10,13 @@ First, download it by adding it to your `Gemfile`:
 gem "picklecore"
 ```
 
-run bundler:
+run [Bundler](https://bundler.io):
 
 ```shell
-$ bundler
+$ bundle install
 ```
 
-and then apply it in your `_config.yml`:
+and apply it in your `_config.yml`:
 
 ```yaml
 theme: picklecore
@@ -32,7 +32,7 @@ Unfortunately, PickleCore is not whitelisted as a GitHub pages theme, so you can
 
 ### Netlify
 
-Netlify is perfect for deploying PickleCore. The setup is quite easy - just set the command as `bundler exec jekyll build` and set the deploy folder to `_site`!
+Netlify is perfect for deploying PickleCore. The setup is quite easy - just set the command as `gem update && gem install bundler && bundle exec jekyll build` and set the deploy folder to `_site`!
 
 ## Customization
 
@@ -46,16 +46,6 @@ PickleCore is (probably) the most customizable theme out in the Jekyllverse. Her
 * `index_on_google` - `true` or `false` depending if you want your site in Google search results
 * `keywords` - an inline list of comma (no spaces) seperated keywords (for SEO) (e.g. `keywords: "hello,world,this,is,my,site"`)
 * `images` - stuff for favicons
-    * Favicons - this requires multiple steps so read all sub-bullets
-    * `images.favicon_base` - route of where the favicons are served, e.g. `https://my.site/favicons/favicon-` (extension must be `PNG`)
-    * `images.favicons` - array of resolutions, e.g.:
-    ```yaml
-    images:
-        favicons:
-            - "32"  # 32x32
-            - "64"  # 64x64
-            # and so on
-    ```
     * `images.tileimage` - the link to the Microsoft tile image
 * `browserconfigxml` - link to a `browserconfig.xml` for Microsoft-based browsers
 * The same thing can be applied to `twitter` with the subkey `image`, and `opengraph` with the subkey `image`
@@ -130,7 +120,10 @@ But you should ***most certainly not*** simply use the `sidebar.html` component 
 
 ### Solid Blocks
 
-Sometimes you need to group data, or show something off, and a card just doesn't work. That's alright, you can just use the solid block element.
+Sometimes you need to group data, or show something off, and a card just doesn't work.
+That's alright, you can just use the solid block element.
+Solid blocks are simply elements with white borders, and a bit of padding.
+Oh, and did I mention they fit together quite nicely?
 
 Example:
 
