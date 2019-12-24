@@ -10,9 +10,9 @@ layout: default
     <i class="fas fa-user-edit"></i> Author: {{ page.author | default: "Administrator" }}
     <br />
     <i class="fas fa-calendar"></i> Date: {{ page.date | date: date_format }}
-    {% if post.tag %}
+    {% if page.tag %}
         <br />
-        <i class="fa fa-tag"></i> Tag: {{ post.tag }}
+        <i class="fa fa-tag"></i> Tag: {{ page.tag }}
     {% endif %}
 </div>
 
