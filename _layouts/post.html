@@ -5,8 +5,16 @@ layout: default
 
 <h2>{{ page.title }}</h2>
 
-{%- assign date_format = site.date_format | default: "%b %-d, %Y" -%}
-By {{ page.author | escape | default: "Administrator" }} - published {{ page.date | date: date_format }}.
+<div>
+    {%- assign date_format = site.date_format | default: "%b %-d, %Y" -%}
+    <i class="fas fa-user-edit"></i> Author: {{ page.author | default: "Administrator" }}
+    <br />
+    <i class="fas fa-calendar"></i> Date: {{ page.date | date: date_format }}
+    {% if post.tag %}
+        <br />
+        <i class="fa fa-tag"></i> Tag: {{ post.tag }}
+    {% endif %}
+</div>
 
 <hr />
 

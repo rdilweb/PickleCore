@@ -1,74 +1,74 @@
 <div id="nav" class="nav">
-  <table>
-    {% if site.github %}
-      <tr>
-        <td>
-          <i class="fab fa-github-square"></i>
-        </td>
-        <td>
-          <a href="https://github.com/{{ site.github }}" alt="GitHub Profile" class="nobreak">GitHub</a>
-        </td>
-      </tr>
-    {% endif %}
-    {% if site.email %}
-      <tr>
-        <td>
-          <i class="fas fa-envelope"></i>
-        </td>
-        <td>
-          <a href="mailto:{{ site.email }}" alt="Email Address" class="nobreak">Email</a>
-        </td>
-      </tr>
-    {% endif %}
-    {% if site.discord %}
-      <tr>
-        <td>
-          <i class="fab fa-discord"></i>
-        </td>
-        <td>
-          <a href="https://discord.gg/{{ site.discord }}" alt="Discord Server" class="nobreak">Discord</a>
-        </td>
-      </tr>
-    {% endif %}
-    {% if site.twitter.username %}
-      <tr>
-        <td>
-          <i class="fab fa-twitter"></i>
-        </td>
-        <td>
-          <a href="https://twitter.com/{{ site.twitter.username }}" class="nobreak" alt="Twitter">Twitter</a>
-        </td>
-      </tr>
-    {% endif %}
-    {% if site.statuspage %}
-      <tr>
-        <td>
-          <i class="fas fa-exclamation-triangle"></i>
-        </td>
-        <td>
-          <a href="{{ site.statuspage }}" class="nobreak" alt="System Status">System Status</a>
-        </td>
-      </tr>
-    {% endif %}
-    {% if site.pgp %}
-      <tr>
-        <td>
-          <i class="fas fa-lock"></i>
-        </td>
-        <td>
-          <a href="{{ site.pgp }}" class="nobreak" alt="Public PGP Key">Public PGP Key</a>
-        </td>
-      </tr>
-    {% endif %}
-    {% if site.devto %}
-      <tr>
-        <td>
-          <i class="fab fa-dev"></i>
-        </td>
-        <td>
-          <a href="https://dev.to/{{ site.devto }}" class="nobreak" alt="DEV Profile">DEV Profile</a>
-        </td>
-      </tr>
-    {% endif %}
+    <table>
+        {%- if site.github -%}
+            <tr>
+                <td>
+                    <i class="fab fa-github-square"></i>
+                </td>
+                <td>
+                    <a href="https://github.com/{{ site.github }}" alt="GitHub Profile" class="nobreak">GitHub</a>
+                </td>
+            </tr>
+        {%- endif -%}
+        {%- if site.email -%}
+            <tr>
+                <td>
+                    <i class="fas fa-envelope"></i>
+                </td>
+                <td>
+                    <a href="mailto:{{ site.email }}" alt="Email Address" class="nobreak">Email</a>
+                </td>
+            </tr>
+        {%- endif -%}
+        {%- if site.discord -%}
+            <tr>
+                <td>
+                    <i class="fab fa-discord"></i>
+                </td>
+                <td>
+                    <a href="https://discord.gg/{{ site.discord }}" alt="Discord Server" class="nobreak">Discord</a>
+                </td>
+            </tr>
+        {%- endif -%}
+        {%- if site.twitter.username -%}
+            <tr>
+                <td>
+                    <i class="fab fa-twitter"></i>
+                </td>
+                <td>
+                    <a href="https://twitter.com/{{ site.twitter.username }}" class="nobreak" alt="Twitter">Twitter</a>
+                </td>
+            </tr>
+        {%- endif -%}
+        {%- if site.statuspage -%}
+            <tr>
+                <td>
+                    <i class="fas fa-exclamation-triangle"></i>
+                </td>
+                <td>
+                    <a href="{{ site.statuspage }}" class="nobreak" alt="System Status">System Status</a>
+                </td>
+            </tr>
+        {%- endif -%}
+        {%- if site.pgp -%}
+            <tr>
+                <td>
+                    <i class="fas fa-lock"></i>
+                </td>
+                <td>
+                    <a href="{{ site.pgp }}" class="nobreak" alt="Public PGP Key">Public PGP Key</a>
+                </td>
+            </tr>
+        {%- endif -%}
+        {%- if site.devto -%}
+            <tr>
+                <td>
+                    <i class="fab fa-dev"></i>
+                </td>
+                <td>
+                    <a href="https://dev.to/{{ site.devto }}" class="nobreak" alt="DEV Profile">DEV Profile</a>
+                </td>
+            </tr>
+        {%- endif -%}
   </table>
 </div>

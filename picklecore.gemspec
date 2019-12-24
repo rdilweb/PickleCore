@@ -3,10 +3,10 @@
 Gem::Specification.new do |spec|
   spec.name          = "picklecore".freeze
   spec.version       = "0.11.0"
-  spec.authors       = ["Reece Dunham", "Param Thakkar"]
-  spec.email         = ["me@rdil.rocks"]
+  spec.authors       = ["Reece Dunham".freeze, "Param Thakkar".freeze]
+  spec.email         = ["me@rdil.rocks".freeze]
   spec.summary       = "A Jekyll theme built to create personal and small websites, but can easily scale!"
-  spec.homepage      = "https://github.com/rdilweb/PickleCore"
+  spec.homepage      = "https://github.com/rdilweb/PickleCore".freeze
   spec.license       = "MPL-2.0".freeze
 
   spec.metadata = {

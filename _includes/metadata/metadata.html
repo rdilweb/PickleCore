@@ -1,13 +1,11 @@
 <meta charset="utf-8">
 <title>{{ include.title | default: site.name }} - {{ site.name }}</title>
-<!--Begin static tags-->
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="msapplication-TileColor" content="#303f9f">
 <meta name="theme-color" content="#303f9f">
 <meta property="og:type" content="website">
-<meta property="og:locale" content="en_US">
-<!--End static tags-->
+<meta property="og:locale" content='{{ site.locale | default: "en_US" }}'>
 {% if site.name %}
   <meta property="og:title" content="{{ site.name }}">
   <meta property="og:site_name" content="{{ site.name }}">
@@ -55,5 +53,5 @@
   <meta name="twitter:image" content="{{ site.twitter.image }}">
 {% endif %}
 {% unless site.no_extra_head %}
-    {% include metadata/extra.html %}
+  {% include metadata/extra.html %}
 {% endunless %}
