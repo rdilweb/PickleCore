@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    picklecore (0.12.0)
+    picklecore (0.12.1)
       jekyll (>= 3.5, < 4.0)
       jekyll-default-layout (= 0.1.4)
       jekyll-relative-links (= 0.6.1)
@@ -54,7 +54,7 @@ GEM
     public_suffix (4.0.1)
     rake (13.0.1)
     rb-fsevent (0.10.3)
-    rb-inotify (0.10.0)
+    rb-inotify (0.10.1)
       ffi (~> 1.0)
     rouge (3.14.0)
     safe_yaml (1.0.5)
