@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    picklecore (0.11.0)
+    picklecore (0.12.0)
       jekyll (>= 3.5, < 4.0)
       jekyll-default-layout (= 0.1.4)
       jekyll-relative-links (= 0.6.1)
@@ -68,9 +68,9 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bundler (= 2.1.0)
+  bundler (= 2.1.2)
   picklecore!
   rake (= 13.0.1)
 
 BUNDLED WITH
-   2.1.0
+   2.1.2
