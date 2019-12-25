@@ -220,6 +220,19 @@ td {
   left: 8px;
 }
 
+@media (prefers-reduced-motion: reduce) {
+  #nav-btn, #nav-btn span, .nav, button {
+    -webkit-transition: 0;
+    -moz-transition: 0;
+    -o-transition: 0;
+    transition: 0;
+  }
+
+  .card:hover {
+    box-shadow: none;
+  }
+}
+
 button {
   display: inline-block;
   vertical-align: middle;
