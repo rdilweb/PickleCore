@@ -5,8 +5,7 @@
 
 body {
   overflow: hidden;
-  transition: background-color 1s;
-  background-color: white;
+  background-color: {%- include styling/theme-color.css -%};
 }
 
 .error {

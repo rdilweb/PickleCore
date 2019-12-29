@@ -8,6 +8,5 @@ function toggleNav() {
     document.getElementById("nav").style.width = "265px";
     navOpen = true;
   }
-
   document.getElementById("nav-btn").classList.toggle("open");
 }

@@ -1,4 +1,9 @@
+# ___________ DO NOT MODIFY BETWEEN THESE LINES ___________
 theme: picklecore
-
 name: PickleCore Test Site
 title: Example
+# ___________ DO NOT MODIFY BETWEEN THESE LINES ___________
+
+# you can edit this stuff though if testing:
+github: rdilweb
+dark: true
