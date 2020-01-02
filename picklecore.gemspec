@@ -26,6 +26,6 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency "jekyll-default-layout", "= 0.1.4"
   spec.add_runtime_dependency "jekyll-relative-links", "= 0.6.1"
 
-  spec.add_development_dependency "bundler", "= 2.1.2"
+  spec.add_development_dependency "bundler", "= 2.1.3"
   spec.add_development_dependency "rake", "= 13.0.1"
 end
