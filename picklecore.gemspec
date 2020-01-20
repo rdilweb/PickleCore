@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "picklecore".freeze
-  spec.version       = "0.14.0"
+  spec.version       = "0.15.0"
   spec.authors       = ["Reece Dunham".freeze, "Param Thakkar".freeze]
   spec.email         = ["me@rdil.rocks".freeze]
   spec.summary       = "A Jekyll theme built to create personal and small websites, but can easily scale!".freeze
@@ -25,6 +25,7 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency "jekyll", ">= 3.5", "< 5"
   spec.add_runtime_dependency "jekyll-default-layout", "= 0.1.4"
   spec.add_runtime_dependency "jekyll-relative-links", "= 0.6.1"
+  spec.add_runtime_dependency "jekyll-seo-tag", "= 2.6.1"
 
   spec.add_development_dependency "bundler", "= 2.1.4"
   spec.add_development_dependency "rake", "= 13.0.1"
