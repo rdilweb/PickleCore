@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    picklecore (0.15.3)
+    picklecore (0.15.4)
       jekyll (>= 3.5, < 5)
       jekyll-default-layout (= 0.1.4)
       jekyll-relative-links (= 0.6.1)
