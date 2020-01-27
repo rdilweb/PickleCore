@@ -65,7 +65,7 @@ tr {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
-.nav {
+nav {
   height: 100%;
   width: 0;
   position: fixed;
@@ -78,7 +78,7 @@ tr {
   padding-top: 60px;
 }
 
-.nav a {
+nav a {
   padding: 8px;
   text-decoration: none;
   color: #303f9f;
@@ -108,10 +108,10 @@ td {
 }
 
 @media screen and (max-height: 450px) {
-  .nav {
+  nav {
     padding-top: 15px;
   }
-  .nav a {
+  nav a {
     font-size: 18px;
   }
 }
