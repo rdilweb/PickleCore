@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "picklecore".freeze
-  spec.version       = "0.16.2"
+  spec.version       = "0.16.3"
   spec.authors       = ["Reece Dunham".freeze, "Param Thakkar".freeze]
   spec.email         = ["me@rdil.rocks".freeze]
   spec.summary       = "A Jekyll theme built to create personal and small websites, but can easily scale!".freeze
@@ -10,8 +10,8 @@ Gem::Specification.new do |spec|
   spec.license       = "MPL-2.0".freeze
 
   spec.metadata = {
-    "bug_tracker_uri"   => "https://github.com/rdilweb/PickleCore/issues",
-    "documentation_uri" => "https://github.com/rdilweb/PickleCore/blob/master/README.md",
+    "bug_tracker_uri"   => "https://github.com/rdilweb/PickleCore/issues/",
+    "documentation_uri" => "https://docs.rdil.rocks/libraries/picklecore/",
     "homepage_uri"      => "https://github.com/rdilweb/PickleCore/",
     "source_code_uri"   => "https://github.com/rdilweb/PickleCore/tree/master",
     "wiki_uri"          => "https://github.com/rdilweb/PickleCore/blob/master/README.md"

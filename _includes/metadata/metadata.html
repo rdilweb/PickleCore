@@ -11,9 +11,6 @@
         <meta name="keywords" content="{{ site.keywords }}">
     {% endif %}
 {% endif %}
-{% if site.keywords %}
-    <meta name="keywords" content="{{ site.keywords }}">
-{% endif %}
 {% if site.apple-touch-icon %}
     <link rel="apple-touch-icon" sizes="180x180" href="{{ site.apple-touch-icon }}">
 {% endif %}
@@ -25,6 +22,16 @@
 {% endif %}
 {% if site.browserconfigxml %}
     <meta name="msapplication-config" content="{{ site.browserconfigxml }}">
+{% endif %}
+{% if site.license-page %}
+    <link rel="license" href="{{ site.license-page }}">
+{% endif %}
+{% if site.author or page.author %}
+    {% if site.author %}
+        <link rel="author" href="{{ site.author }}">
+    {% else %}
+        <link rel="author" href="{{ page.author }}">
+    {% endif %}
 {% endif %}
 {% unless site.no_extra_head %}
     {% include metadata/extra.html %}
