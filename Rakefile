@@ -14,7 +14,7 @@ task :build do
 end
 
 task :release do
-  Rake::Task[":build"].invoke
+  Rake::Task["build"].invoke
   puts "Start phase 'gem push'"
   sh "gem push *.gem"
   puts "End phase 'gem push'"
