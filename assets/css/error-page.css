@@ -8,7 +8,7 @@ body {
   background-color: {%- include styling/theme-color.css -%};
 }
 
-.error {
+main {
   height: 100vh;
   display: flex;
   flex-direction: column;

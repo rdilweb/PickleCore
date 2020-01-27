@@ -9,7 +9,7 @@ body {
   background-color: {%- include styling/theme-color.css -%};
 }
 
-.content {
+main {
   margin: 75px 100px;
   font-family: "Open Sans", sans-serif;
   color: white;

@@ -3,19 +3,21 @@ layout: default
 ---
 {% include components/binds/sidebar-anchor.html %}
 
-<h2>{{ page.title }}</h2>
+<main>
+    <h1>{{ page.title }}</h1>
 
-<div>
-    {%- assign date_format = site.date_format | default: "%b %-d, %Y" -%}
-    <i class="fas fa-user-edit"></i> Author: {{ page.author | default: "Administrator" }}
-    <br />
-    <i class="fas fa-calendar"></i> Date: {{ page.date | date: date_format }}
-    {% if page.tag %}
+    <div>
+        {%- assign date_format = site.date_format | default: "%b %-d, %Y" -%}
+        <i class="fas fa-user-edit"></i> Author: {{ page.author | default: "Administrator" }}
         <br />
-        <i class="fa fa-tag"></i> Tag: {{ page.tag }}
-    {% endif %}
-</div>
+        <i class="fas fa-calendar"></i> Date: {{ page.date | date: date_format }}
+        {% if page.tag %}
+            <br />
+            <i class="fa fa-tag"></i> Tag: {{ page.tag }}
+        {% endif %}
+    </div>
 
-<hr />
+    <hr />
 
-{{ content }}
+    {{ content }}
+</main>
