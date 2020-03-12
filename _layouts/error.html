@@ -6,8 +6,8 @@
     </head>
     <body>
         <main>
-            <h1 class="animated fadeInRightBig">{{ page.message | default: "Uh oh..." }}</h1>
-            <p class="animated delay fadeInLeftBig">
+            <h1>{{ page.message | default: "Uh oh..." }}</h1>
+            <p>
                 Error {{ page.code }} ({{ page.desc }})
                 {{ content }}
             </p>
