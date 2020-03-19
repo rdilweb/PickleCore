@@ -1,12 +1,10 @@
 ---
 ---
 
-{% include styling/font.css %}
+@import "_base";
 
 body {
   overflow: hidden;
-  background-color: {%- include styling/theme-color.css -%};
-  font-family: "Open Sans";
 }
 
 main {
@@ -18,12 +16,14 @@ main {
   color: white;
 }
 
-.error p {
-  font-size: 1.4em;
-}
+.error {
+  p {
+    font-size: 1.4em;
+  }
 
-.error a {
-  color: white;
+  a {
+    color: white;
+  }
 }
 
 .error a:hover {
