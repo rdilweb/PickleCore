@@ -6,4 +6,4 @@ title: Example
 
 # you can edit this stuff though if testing:
 github: rdilweb
-dark: true
+port: 3000
