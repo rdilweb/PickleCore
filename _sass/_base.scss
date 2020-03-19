@@ -1,9 +1,5 @@
-{% if site.dark %}
-$theme-color: #24292e;
-{% else %}
+//$theme-color: #24292e;
 $theme-color: #303f9f;
-{% endif %}
-
 $font-stack: "Open Sans", sans-serif;
 
 @font-face {
@@ -47,4 +43,8 @@ a {
   .content {
     margin: 75px 12.5px;
   }
+}
+
+.title {
+  height: 45vh;
 }

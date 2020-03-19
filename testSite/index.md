@@ -1,5 +1,5 @@
 ---
-layout: default-with-sidebar
+layout: default
 title: EXAMPLE PAGE
 ---
 
@@ -9,13 +9,7 @@ Hi!
 
 ------
 
-<div class="cards">
-    {% include components/card.html cardtitle="Hello" cardbody="from card world" %}
-</div>
-
-------
-
-<button>I am a BUTTON (big surprise right?)</button>
+{% include components/card.html cardtitle="Hello" cardbody="from card world" %}
 
 ------
 
