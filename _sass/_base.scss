@@ -13,6 +13,8 @@ $font-stack: "Open Sans", sans-serif;
   url('/assets/fonts/open-sans-v17-latin-regular.svg#OpenSans') format('svg');
 }
 
+@import "bulma/sass/grid/columns";
+
 body {
   margin: 0;
   padding: 0;
@@ -43,8 +45,4 @@ a {
   .content {
     margin: 75px 12.5px;
   }
-}
-
-.card {
-  margin: 1px;
 }

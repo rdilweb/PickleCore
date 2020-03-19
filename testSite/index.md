@@ -7,9 +7,25 @@ title: EXAMPLE PAGE
 
 Hi!
 
-{% include components/card.html cardtitle="Hello 1" cardbody="from card world" %}
-{% include components/card.html cardtitle="Hello 2" cardbody="from card world" %}
-{% include components/card.html cardtitle="Hello 3" cardbody="from card world" %}
+<div class="columns">
+{% include components/startcard.html %}
+<h3>Card 1</h3>
+
+Hello from cardworld
+{% include components/endcard.html %}
+
+{% include components/startcard.html %}
+<h3>Card 2</h3>
+
+Hello from cardworld
+{% include components/endcard.html %}
+
+{% include components/startcard.html %}
+<h3>Card 3</h3>
+
+Hello from cardworld
+{% include components/endcard.html %}
+</div>
 
 ------
 
