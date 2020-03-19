@@ -1,0 +1,50 @@
+$font-stack: "Open Sans", sans-serif;
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/assets/fonts/open-sans-v17-latin-regular.eot');
+  src: local('Open Sans Regular'), local('OpenSans-Regular'),
+  url('/assets/fonts/open-sans-v17-latin-regular.eot?#iefix') format('embedded-opentype'),
+  url('/assets/fonts/open-sans-v17-latin-regular.woff2') format('woff2'),
+  url('/assets/fonts/open-sans-v17-latin-regular.woff') format('woff'),
+  url('/assets/fonts/open-sans-v17-latin-regular.ttf') format('truetype'),
+  url('/assets/fonts/open-sans-v17-latin-regular.svg#OpenSans') format('svg');
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: $theme-color;
+  font-family: $font-stack;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+main {
+  margin: 75px 100px;
+  color: white;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  margin-top: 36px;
+}
+
+a {
+  color: white;
+}
+
+@media only screen and (max-width: 500px) {
+  .content {
+    margin: 75px 12.5px;
+  }
+}
+
+.card {
+  margin: 1px;
+}

@@ -1,9 +1,3 @@
-require 'bundler'
-require 'rubygems'
-require 'rake'
-
-abort('Please run rake using `bundler exec rake`') unless ENV["BUNDLE_BIN_PATH"]
-
 task default: %w[build]
 
 task :build do

@@ -1,8 +1,9 @@
+{% capture theme-color %}#{%- if site.dark -%}24292e{% else %}303f9f{%- endif -%}{% endcapture %}
 <meta charset="{{ site.charset | default: 'utf-8' }}">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="msapplication-TileColor" content="{%- include styling/theme-color.css -%}">
-<meta name="theme-color" content="{%- include styling/theme-color.css -%}">
+<meta name="msapplication-TileColor" content="{{ theme-color }}">
+<meta name="theme-color" content="{{ theme-color }}">
 {% seo %}
 {% if site.keywords or page.keywords %}
     {% if page.keywords %}

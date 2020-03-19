@@ -1,5 +1,5 @@
 ---
-layout: default-with-sidebar
+layout: default
 title: EXAMPLE PAGE
 ---
 
@@ -7,15 +7,9 @@ title: EXAMPLE PAGE
 
 Hi!
 
-------
-
-<div class="cards">
-    {% include components/card.html cardtitle="Hello" cardbody="from card world" %}
-</div>
-
-------
-
-<button>I am a BUTTON (big surprise right?)</button>
+{% include components/card.html cardtitle="Hello 1" cardbody="from card world" %}
+{% include components/card.html cardtitle="Hello 2" cardbody="from card world" %}
+{% include components/card.html cardtitle="Hello 3" cardbody="from card world" %}
 
 ------
 
@@ -25,5 +19,5 @@ Hi!
 ------
 
 {% for post in site.posts %}
-<a href="{{ post.url | relative }}">I wrote a post once</a>
+* <a href="{{ post.url | relative }}">I wrote a post once</a>
 {% endfor %}
