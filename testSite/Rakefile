@@ -1,0 +1,6 @@
+task :run do
+  sh "jekyll clean"
+  sh "jekyll s"
+end
+
+task default: %w[run]

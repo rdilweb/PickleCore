@@ -1,4 +1,4 @@
-$font-stack: "Open Sans", sans-serif;
+$family-sans-serif: "Open Sans", sans-serif;
 
 @font-face {
   font-family: 'Open Sans';
@@ -13,20 +13,17 @@ $font-stack: "Open Sans", sans-serif;
   url('/assets/fonts/open-sans-v17-latin-regular.svg#OpenSans') format('svg');
 }
 
-@import "bulma/sass/grid/columns";
-
 body {
   margin: 0;
   padding: 0;
-  background-color: $theme-color;
-  font-family: $font-stack;
+  font-family: $family-sans-serif;
+  color: $primary;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 main {
   margin: 75px 100px;
-  color: white;
 }
 
 h1 {
@@ -38,11 +35,11 @@ h2 {
 }
 
 a {
-  color: white;
+  color: $link;
 }
 
 @media only screen and (max-width: 500px) {
-  .content {
+  main {
     margin: 75px 12.5px;
   }
 }

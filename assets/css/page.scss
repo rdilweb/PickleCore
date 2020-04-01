@@ -3,5 +3,6 @@
 
 @import "skins/_{{ site.skin | default: 'light' }}";
 @import "bulma/sass/utilities/_all";
+@import "bulma/sass/grid/columns";
 @import "bulma/sass/components/card";
 @import "_base";
