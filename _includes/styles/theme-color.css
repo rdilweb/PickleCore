@@ -1,0 +1,1 @@
+#{%- if site.dark -%}24292e{% else %}303f9f{%- endif -%}
