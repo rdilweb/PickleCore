@@ -9,3 +9,4 @@ github: rdilweb
 port: 3000
 description: This is a cool example site
 url: https://example.com
+skin: dark
