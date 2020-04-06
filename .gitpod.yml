@@ -1,6 +1,5 @@
 tasks:
-  - init: echo "gem: --no-document" >> ~/.gemrc
-  - command: gem update && gem update --system && gem install bundler && bundler
+  - command: gem update --system && gem install bundler && bundler
 
 ports:
   - port: 4000
