@@ -1,12 +1,10 @@
-# ___________ DO NOT MODIFY BETWEEN THESE LINES ___________
 theme: picklecore
 name: PickleCore Test Site
 title: Example
-# ___________ DO NOT MODIFY BETWEEN THESE LINES ___________
 
 # you can edit this stuff though if testing:
 github: rdilweb
 port: 3000
 description: This is a cool example site
 url: https://example.com
-skin: dark
+skin: light

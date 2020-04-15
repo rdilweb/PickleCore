@@ -22,7 +22,7 @@ Gem::Specification.new do |spec|
     f.match(%r!^(assets|_(includes|layouts|sass)/|(LICENSE|README)(\.(txt|md)|$))!i)
   end
 
-  spec.add_runtime_dependency 'jekyll', '>= 3.5', '< 5'
+  spec.add_runtime_dependency 'jekyll', '> 3.5', '< 5'
   spec.add_runtime_dependency 'jekyll-default-layout', '= 0.1.4'
   spec.add_runtime_dependency 'jekyll-relative-links', '= 0.6.1'
   spec.add_runtime_dependency 'jekyll-seo-tag', '= 2.6.1'

@@ -1,2 +1,7 @@
 $primary: white;
 $background: #24292e;
+
+hr {
+  background-color: $primary;
+  border: 2px solid $primary;
+}
