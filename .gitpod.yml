@@ -1,3 +1,5 @@
+image: rdilpickle/better-wsfull:latest
+
 tasks:
   - command: gem update --system && gem install bundler && bundler
 
