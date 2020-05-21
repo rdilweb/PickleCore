@@ -1,0 +1,5 @@
+items:
+  - name: GitHub
+    url: https://github.com/rdilweb/PickleCore/
+    fa-icon-classes: fab fa-github
+    alt: GitHub Repository

@@ -1,7 +1,7 @@
 image: rdilpickle/better-wsfull:latest
 
 tasks:
-  - command: gem update --system && gem install bundler && bundler
+  - command: bundle install
 
 ports:
   - port: 4000

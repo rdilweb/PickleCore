@@ -30,6 +30,21 @@
         <link rel="author" href="{{ page.author }}">
     {% endif %}
 {% endif %}
+{% if page.sidebar %}
+<script type="text/javascript">
+navOpen = false;
+function toggleNav() {
+  if (navOpen) {
+    document.getElementById("snav").style.width = "0";
+    navOpen = false;
+  } else {
+    document.getElementById("snav").style.width = "265px";
+    navOpen = true;
+  }
+  document.getElementById("nav-btn").classList.toggle("open");
+}
+</script>
+{% endif %}
 {% unless site.no_extra_head %}
     {% include metadata/extra.html %}
 {% endunless %}
