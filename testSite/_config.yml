@@ -1,7 +1,11 @@
 theme: picklecore
 name: PickleCore Test Site
 title: Example
-
+exclude:
+  - package.json
+  - yarn.lock
+  - tests.js
+  - node_modules
 # you can edit this stuff though if testing:
 github: rdilweb
 port: 3000

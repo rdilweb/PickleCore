@@ -2,3 +2,7 @@ task :default do
   sh "jekyll clean"
   sh "jekyll s"
 end
+
+task :clean do
+  sh "jekyll clean"
+end
