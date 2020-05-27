@@ -17,6 +17,7 @@ tests_task:
     image: rdilpickle/better-wsfull:latest
   env:
     JEKYLL_ENV: production
+    PATH: $PATH:$HOME/.rvm/bin
   Yarn_cache:
     folder: testSite/node_modules
     populate_script: cd testSite && yarn install
