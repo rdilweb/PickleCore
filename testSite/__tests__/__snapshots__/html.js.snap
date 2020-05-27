@@ -1,0 +1,112 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`html tests index.html is the same as last time 1`] = `
+"<!DOCTYPE html>
+<html lang=\\"en\\">
+    <head>
+        <meta charset=\\"utf-8\\">
+<meta http-equiv=\\"X-UA-Compatible\\" content=\\"IE=edge\\">
+<meta name=\\"viewport\\" content=\\"width=device-width, initial-scale=1\\">
+<meta name=\\"msapplication-TileColor\\" content=\\"#303f9f\\">
+<meta name=\\"theme-color\\" content=\\"#303f9f\\">
+<!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>EXAMPLE PAGE | Example</title>
+<meta name=\\"generator\\" content=\\"Jekyll v3.8.7\\" />
+<meta property=\\"og:title\\" content=\\"EXAMPLE PAGE\\" />
+<meta property=\\"og:locale\\" content=\\"en_US\\" />
+<meta name=\\"description\\" content=\\"This is a cool example site\\" />
+<meta property=\\"og:description\\" content=\\"This is a cool example site\\" />
+<link rel=\\"canonical\\" href=\\"https://example.com/\\" />
+<meta property=\\"og:url\\" content=\\"https://example.com/\\" />
+<meta property=\\"og:site_name\\" content=\\"Example\\" />
+<script type=\\"application/ld+json\\">
+{\\"description\\":\\"This is a cool example site\\",\\"headline\\":\\"EXAMPLE PAGE\\",\\"name\\":\\"Example\\",\\"@type\\":\\"WebSite\\",\\"url\\":\\"https://example.com/\\",\\"@context\\":\\"https://schema.org\\"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+
+
+
+
+
+
+<script type=\\"text/javascript\\">
+navOpen = false;
+function toggleNav() {
+  if (navOpen) {
+    document.getElementById(\\"snav\\").style.width = \\"0\\";
+    navOpen = false;
+  } else {
+    document.getElementById(\\"snav\\").style.width = \\"265px\\";
+    navOpen = true;
+  }
+  document.getElementById(\\"nav-btn\\").classList.toggle(\\"open\\");
+}
+</script>
+
+
+    
+
+
+        <link rel=\\"stylesheet\\" href=\\"/assets/css/page.css\\"></link>
+    </head>
+    <body>
+        
+            <div id=\\"nav-btn\\" class=\\"openbtn\\" onclick=\\"toggleNav()\\">
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+<nav aria-label=\\"site\\" class=\\"sidebar-nav\\" id=\\"snav\\">
+    <table class=\\"sidebar-table\\"><tr class=\\"sidebar-tr\\"><td class=\\"sidebar-td\\">
+                            <i class=\\"fab fa-github sidebar-icon\\"></i>
+                        </td><td class=\\"sidebar-td\\">
+                        <a href=\\"https://github.com/rdilweb/PickleCore/\\"alt=\\"GitHub Repository\\">GitHub</a>
+                    </td>
+                </tr></table>
+</nav>
+
+        
+        <main class=\\"content\\">
+            <h1 id=\\"index\\">Index</h1>
+
+<p>Hi!</p>
+
+<div class=\\"columns\\">
+<div class=\\"column\\"><div class=\\"card\\"><div class=\\"card-content\\">
+<h3>Card 1</h3>
+
+Hello from cardworld
+</div></div></div>
+
+<div class=\\"column\\"><div class=\\"card\\"><div class=\\"card-content\\">
+<h3>Card 2</h3>
+
+Hello from cardworld
+</div></div></div>
+
+<div class=\\"column\\"><div class=\\"card\\"><div class=\\"card-content\\">
+<h3>Card 3</h3>
+
+Hello from cardworld
+</div></div></div>
+</div>
+
+<hr />
+
+<p><em>italics</em>
+<strong>bold</strong></p>
+
+<hr />
+
+<ul>
+  <li><a href=\\"/2019/01/01/test.html\\">I wrote a post once</a></li>
+</ul>
+
+
+        </main>
+        <link rel=\\"stylesheet\\" href=\\"https://use.fontawesome.com/releases/v5.7.2/css/all.css\\" integrity=\\"sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr\\" crossorigin=\\"anonymous\\">
+    </body>
+</html>
+"
+`;

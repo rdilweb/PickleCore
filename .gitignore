@@ -38,3 +38,4 @@ build/
 .sass-cache
 testSite/_site
 testSite/Gemfile.lock
+testSite/node_modules

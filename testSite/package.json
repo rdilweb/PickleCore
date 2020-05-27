@@ -1,0 +1,27 @@
+{
+  "name": "test-site",
+  "version": "1.0.0",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
+    "babel-jest": "^26.0.1",
+    "jest": "^26.0.1"
+  },
+  "scripts": {
+    "test": "node tests.js"
+  },
+  "jest": {
+    "verbose": true
+  },
+  "devDependencies": {
+    "@types/jest": "^25.2.3",
+    "@types/node": "^14.0.4"
+  },
+  "babel": {
+    "presets": [
+      "@babel/env"
+    ]
+  }
+}
