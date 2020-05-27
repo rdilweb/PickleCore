@@ -20,7 +20,7 @@ exports[`html tests index.html is the same as last time 1`] = `
 <meta property=\\"og:url\\" content=\\"https://example.com/\\" />
 <meta property=\\"og:site_name\\" content=\\"Example\\" />
 <script type=\\"application/ld+json\\">
-{\\"headline\\":\\"EXAMPLE PAGE\\",\\"url\\":\\"https://example.com/\\",\\"description\\":\\"This is a cool example site\\",\\"@type\\":\\"WebSite\\",\\"name\\":\\"Example\\",\\"@context\\":\\"https://schema.org\\"}</script>
+{\\"description\\":\\"This is a cool example site\\",\\"headline\\":\\"EXAMPLE PAGE\\",\\"name\\":\\"Example\\",\\"@type\\":\\"WebSite\\",\\"url\\":\\"https://example.com/\\",\\"@context\\":\\"https://schema.org\\"}</script>
 <!-- End Jekyll SEO tag -->
 
 
