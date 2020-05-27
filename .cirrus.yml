@@ -14,9 +14,12 @@ gem_build_task:
 
 tests_task:
   container:
-    image: node:14
+    image: rdilpickle/better-wsfull:latest
+  env:
+    JEKYLL_ENV: production
   Yarn_cache:
     folder: testSite/node_modules
     populate_script: cd testSite && yarn install
     fingerprint_script: cd testSite && cat package.json && cat yarn.lock
+  install_ruby_dependencies: bundle install
   run_tests_script: cd testSite && yarn test
