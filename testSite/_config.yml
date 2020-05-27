@@ -6,6 +6,9 @@ exclude:
   - yarn.lock
   - tests.js
   - node_modules
+  - Gemfile
+  - Gemfile.lock
+  - Rakefile
 # you can edit this stuff though if testing:
 github: rdilweb
 port: 3000
