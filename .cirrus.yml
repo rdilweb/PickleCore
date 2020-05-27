@@ -11,3 +11,12 @@ gem_build_task:
   build_script: bundle exec rake --trace --verbose
   gem_artifacts:
     path: ./*.gem
+
+tests_task:
+  container:
+    image: node:14
+  Yarn_cache:
+    folder: testSite/node_modules
+    populate_script: cd testSite && yarn install
+    fingerprint_script: cd testSite && cat package.json && cat yarn.lock
+  run_tests_script: cd testSite && yarn test
