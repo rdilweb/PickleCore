@@ -17,10 +17,9 @@ tests_task:
     image: rdilpickle/better-wsfull:latest
   env:
     JEKYLL_ENV: production
-    PATH: $PATH:$HOME/.rvm/bin
   Yarn_cache:
     folder: testSite/node_modules
     populate_script: cd testSite && yarn install
     fingerprint_script: cd testSite && cat package.json && cat yarn.lock
-  install_ruby_dependencies_script: bundle install
-  run_tests_script: cd testSite && yarn test
+  install_ruby_dependencies_script: source "$HOME/.rvm/scripts/rvm" && bundle install
+  run_tests_script: cd testSite && source "$HOME/.rvm/scripts/rvm" && yarn test
