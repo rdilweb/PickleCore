@@ -22,4 +22,5 @@ tests_task:
     populate_script: cd testSite && yarn install
     fingerprint_script: cd testSite && cat package.json && cat yarn.lock
   install_ruby_dependencies_script: source "$HOME/.rvm/scripts/rvm" && bundle install
+  clone_bulma_script: cd _sass && git clone https://github.com/jgthms/bulma.git && cd bulma && git checkout 0dc4416
   run_tests_script: cd testSite && source "$HOME/.rvm/scripts/rvm" && yarn test
