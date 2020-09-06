@@ -2,7 +2,7 @@ PATH
   remote: .
   specs:
     picklecore (1.0.1)
-      jekyll (> 3.5, < 5)
+      jekyll (> 3.8, < 5)
       jekyll-default-layout (= 0.1.4)
       jekyll-relative-links (= 0.6.1)
       jekyll-seo-tag (= 2.6.1)
