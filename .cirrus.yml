@@ -5,7 +5,6 @@ gem_build_task:
     JEKYLL_ENV: production
   bootstrap_script: |
     gem update --system
-    gem update
     gem install bundler
   install_dependencies_script: bundle install
   build_script: bundle exec rake --trace --verbose
