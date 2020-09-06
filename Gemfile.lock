@@ -1,5 +1,5 @@
 PATH
-  remote: ..
+  remote: .
   specs:
     picklecore (1.0.1)
       jekyll (> 3.8, < 5)

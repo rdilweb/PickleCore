@@ -1,7 +1,6 @@
 ---
 layout: default
 title: EXAMPLE PAGE
-sidebar: true
 ---
 
 # Index

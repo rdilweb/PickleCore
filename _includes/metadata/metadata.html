@@ -30,7 +30,7 @@
         <link rel="author" href="{{ page.author }}">
     {% endif %}
 {% endif %}
-{% if page.sidebar %}
+{% unless page.nosidebar %}
 <script type="text/javascript">
 navOpen = false;
 function toggleNav() {
@@ -44,7 +44,7 @@ function toggleNav() {
   document.getElementById("nav-btn").classList.toggle("open");
 }
 </script>
-{% endif %}
+{% endunless %}
 {% unless site.no_extra_head %}
     {% include metadata/extra.html %}
 {% endunless %}

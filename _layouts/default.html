@@ -5,9 +5,9 @@
         <link rel="stylesheet" href="/assets/css/page.css"></link>
     </head>
     <body>
-        {% if page.sidebar %}
+        {% unless page.nosidebar %}
             {% include components/sidebar.html %}
-        {% endif %}
+        {% endunless %}
         <main class="content">
             {{ content }}
         </main>
