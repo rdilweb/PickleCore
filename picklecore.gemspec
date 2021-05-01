@@ -28,5 +28,5 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency 'jekyll-seo-tag', '= 2.6.1'
   spec.add_runtime_dependency 'kramdown-parser-gfm', '= 1.1.0'
 
-  spec.add_development_dependency 'rake', '= 13.0.1'
+  spec.add_development_dependency 'rake', '= 13.0.3'
 end
