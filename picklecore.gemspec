@@ -23,7 +23,7 @@ Gem::Specification.new do |spec|
   end
 
   spec.add_runtime_dependency 'jekyll', '> 3.8', '< 5'
-  spec.add_runtime_dependency 'jekyll-default-layout', '= 0.1.4'
+  spec.add_runtime_dependency 'jekyll-default-layout', '= 0.1.5'
   spec.add_runtime_dependency 'jekyll-relative-links', '= 0.6.1'
   spec.add_runtime_dependency 'jekyll-seo-tag', '= 2.6.1'
   spec.add_runtime_dependency 'kramdown-parser-gfm', '= 1.1.0'
